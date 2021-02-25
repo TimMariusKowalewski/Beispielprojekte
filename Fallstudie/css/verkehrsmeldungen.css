@@ -1,0 +1,87 @@
+#Verkehrsmeldungen {
+    margin-top: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    /*align-items: stretch;*/
+    min-height: 140px;
+    box-shadow: 0 5px 10px #888888;
+}
+
+.tab {
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid gray;
+}
+
+.tabs {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    /*align-items: stretch;*/
+    /*background-color: #fe019a;*/
+}
+
+.tabs label {
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}
+
+.panels {
+    width: 100%;
+}
+
+.panel {
+    display: none;
+    animation: fadein .8s;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.panel-title {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+#one:checked~.panels #one-panel, #two:checked~.panels #two-panel, #three:checked~.panels #three-panel {
+    display: block;
+    padding-top: 10px;
+    border: 2px solid #fe019a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#one:checked~.tabs #one-tab, #two:checked~.tabs #two-tab, #three:checked~.tabs #three-tab {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: 2px solid #fe019a;
+    background-color: #fe019a;
+    width: 100%;
+    text-align: center;
+}
+
+.radio {
+    display: none;
+}
+
+.highlight_red:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}

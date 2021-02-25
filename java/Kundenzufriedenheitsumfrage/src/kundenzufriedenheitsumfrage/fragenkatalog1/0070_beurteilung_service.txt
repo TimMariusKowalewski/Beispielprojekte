@@ -1,0 +1,6 @@
+ID:Q0070
+FRAGE_TYP:2
+FRAGE:Bitte beurteilen Sie den Service anhand der folgenden Kriterien:
+SUB_ANTWORTEN:zuverlässig,schnell,freundlich,kompetent
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

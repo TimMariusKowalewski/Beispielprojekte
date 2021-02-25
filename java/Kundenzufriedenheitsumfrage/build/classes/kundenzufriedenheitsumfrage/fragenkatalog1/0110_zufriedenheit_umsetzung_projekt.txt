@@ -1,0 +1,5 @@
+ID:Q0110
+FRAGE_TYP:1
+FRAGE:"Wir sind mit der Umsetzung des Projektes insgesamt zufrieden."
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

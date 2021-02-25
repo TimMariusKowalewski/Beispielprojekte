@@ -1,0 +1,5 @@
+ID:Q0030
+FRAGE_TYP:4
+FRAGE:Welches Projekt wollen Sie bewerten? (bitte Projektnummer angeben!)
+ANTWORT_SKALA:FREITEXT
+ANTWORT_TYPE:String

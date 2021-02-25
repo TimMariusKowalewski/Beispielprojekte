@@ -1,0 +1,6 @@
+ID:Q0090
+FRAGE_TYP:2
+FRAGE:Bitte beurteilen Sie die Beratung anhand der folgenden Kriterien:
+SUB_ANTWORTEN:persönlich,kundenorientiert,kompetent,strukturiert
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

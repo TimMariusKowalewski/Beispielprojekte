@@ -1,0 +1,124 @@
+.third-level-menu {
+    position: absolute;
+    top: -2px;
+    right: -203px;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    color: black;
+    border: 1px solid #fff111;
+    border-radius: 5px;
+}
+
+.third-level-menu>li {
+    height: 30px;
+    background: #fff111;
+    color: black;
+}
+
+@keyframes example {
+    from {
+        background-color: #fff999;
+    }
+    to {
+        background-color: #fe019a;
+    }
+}
+
+#ourglobe {
+    color: #fe019a;
+}
+
+.third-level-menu>li:hover {
+    background: #fe019a;
+    border: 1px solid #fe019a;
+    border-radius: 5px;
+}
+
+.second-level-menu {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    color: black;
+    border: 1px solid #fff111;
+    border-radius: 5px;
+}
+
+.second-level-menu>li {
+    position: relative;
+    height: 30px;
+    background: #fff111;
+    color: black;
+}
+
+.second-level-menu>li:hover {
+    background-color: #fe019a;
+    border: 1px solid #fe019a;
+    border-radius: 5px;
+}
+
+.second-level-menu a {
+    color: #000000 !important;
+}
+
+.top-level-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.top-level-menu>li {
+    /*border: 1px solid #fff111;
+    border-radius: 5px;*/
+    float: left;
+    height: 30px;
+    width: 150px;
+    /*background: #999999;*/
+}
+
+.top-level-menu>li a:hover {
+    color: #ffffff;
+}
+
+.top-level-menu>li a {
+    color: #ffffff;
+}
+
+.top-level-menu li:hover>ul {
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a
+/* Apply to all links inside the multi-level menu */
+
+    {
+    /*font: bold 14px Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-menu a:hover {
+    color: #000000;
+}
+
+#Playlist {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}

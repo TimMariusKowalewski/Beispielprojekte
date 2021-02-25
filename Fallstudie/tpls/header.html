@@ -1,0 +1,151 @@
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/verkehrsmeldungen.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/topmeldungen.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <!--<link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>-->
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="js/slider.js" defer></script>
+    <script type="text/javascript" src="js/menu.js" defer></script>
+    <!--<script type="text/javascript" src="js/map.js" defer></script>-->
+    <script type="text/javascript" src="js/header.js" defer></script>
+    <script type="text/javascript" src="js/topmeldungen.js" defer></script>
+    <title>RuhrCompanion (RC)</title>
+</head>
+
+<body>
+    <section id="HeaderGrid">
+        <aside id="HeaderGridRow1">
+            <aside id="HeaderMenu">
+                <ul class="top-level-menu">
+                    <li>
+                        <a href="#"><i class="fas fa-bars"></i>&nbsp;Menu</a>
+                        <ul class="second-level-menu">
+                            <li>
+                                <a href="#">Nachrichten</a>
+                                <ul class="third-level-menu">
+                                    <li><a href="#">Lokalnachrichten</a></li>
+                                    <li><a href="#">NRW</a></li>
+                                    <li><a href="#">Deutschland</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Verkehr</a></li>
+                            <li><a href="#">Wetter</a></li>
+                            <li>
+                                <a href="#">Gewinnspiele</a>
+                                <ul class="third-level-menu">
+                                    <li><a href="#">Radiosparbox</a></li>
+                                    <li><a href="#">Weihnachtswichteln</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Radioprogramm</a></li>
+                            <li><a href="#">Mediathek</a></li>
+                            <li>
+                                <a href="#">Über uns</a>
+                                <ul class="third-level-menu">
+                                    <li><a href="#">Kontakt</a></li>
+                                    <li><a href="#">Impressum</a></li>
+                                    <li><a href="#">Datenschutz</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <aside id="Logo">
+               <img src="img/Logo2.png" alt="Logo" />
+            </aside>
+            <aside id="Frequenz"><a href=""><i class="fas fa-broadcast-tower" aria-hidden="true"></i> &nbsp;31.337
+                    UKW</a></aside>
+            <aside id="AktuellesLied">
+                <a href=""><i class="fas fa-play-circle fa-lg"></i> Colin Hay - Overkill</a>
+            </aside>
+            <aside id="ShoutBox">
+                <a href=""><i class="fas fa-microphone"></i>&nbsp; ShoutBox</a>
+            </aside>
+            <aside id="Wetter"><a href=""><i class="fas fa-cloud"></i>&nbsp;23&deg;</a></aside>
+            <aside id="Stau"><a href=""><i class="fas fa-car"></i>&nbsp;42 Meldungen</a></aside>
+            </aside>
+            <aside id="HeaderGridRow2">
+            <aside id="Row2Nachrichten">
+                <a href="RadioNachrichten"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    Nachrichten</a>
+            </aside>
+            <aside id="Row2Mediathek">
+                <a href="RadioMusik"> <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Mediathek</a>
+            </aside>
+            <aside id="Row2Weihnachtswichteln">
+                <a href="Weihnachtswichteln"> <i class="fa fa-location-arrow"
+                        aria-hidden="true"></i>&nbsp;Weihnachtswichteln</a>
+            </aside>
+            <aside id="Row2Radioprogramm">
+                <a href="RadioProgramm"> <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Radioprogramm</a>
+            </aside>
+            <aside id="Row2Events">
+                <a href="RadioEvents"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Events</a>
+            </aside>
+            <aside id="Row2Suche">
+                <nobr><input type="search" id="suche" size="15" placeholder="Suchbegriff">
+                &nbsp;<input type="submit" value="Suchen"></nobr>
+            </aside>
+            <aside id="Row2Sprache">
+
+                <nobr><i class="fa fa-globe" aria-hidden="true" id="ourglobe"></i>&nbsp;
+                <!--<img src="https://www.flaticon.com/svg/static/icons/svg/814/814587.svg" width="30px" height="30px">-->
+                <!--<div>-->
+                <select id="sprachen">
+                    <option>Deutsch</option>
+                    <option>Englisch</option>
+                    <option>Türkisch</option>
+                    <option>Arabisch</option>
+                    <option>Spanisch</option>
+                    <option>Französisch</option>
+                    <option>Chinesisch</option>
+                    <option>Polnisch</option>
+                </select></nobr>
+                <!--</div>-->
+            </aside>
+        </aside>
+    </section>
+    <section id="TopMeldungen">
+        <div>
+            <span id="TopMeldungLeftArrow" class="fas fa-angle-left fa-3x" style="vertical-align: middle;"></span>
+        </div>
+        <div id="aktuelleTopMeldung">
+            <span>
+                &nbsp;<i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;<b>28.09.2020:</b> Bombenentschärfung am
+                Essener
+                Hauptbahnhof
+            </span>&nbsp;
+        </div>
+        <div>
+            <span id="TopMeldungRightArrow" class="fas fa-angle-right fa-3x" style="vertical-align: middle;"></span>
+        </div>
+    </section>
+    <section id="Playlist">
+        <aside id="Bilder">
+            <a class="LastNext" href="https://www.youtube.com/watch?v=6TbAn5t5u0k"> <p>Nächster Titel</p><img
+                    src="https://images-na.ssl-images-amazon.com/images/I/A1Fam9JcloL._SL1500_.jpg" width="80px"
+                    height="80px"></a>
+            <a class="now"  href="https://www.youtube.com/watch?v=M3C5AxR7DWg&list=RDM3C5AxR7DWg&start_radio=1">
+                <p>Aktueller Titel</p> <img src="https://images-na.ssl-images-amazon.com/images/I/61Jr1xsyrFL.jpg" width="200px"
+                    height="200px"></a>
+            <a class="LastNext" href="https://www.youtube.com/watch?v=nksTXmu1UAg"><p>Vorheriger Titel</p><img
+                    src="https://images-na.ssl-images-amazon.com/images/I/51lMkpswsXL.jpg" width="80px" height="80px">
+            </a>
+        </aside>
+        <aside id="Titel">
+           <b>The Dear Hunter</br>Whisper</b>
+           <b>Colin Hay</br>Overkill</b>
+           <b>Mikhael Paskalev </br>I Spy</b>
+        </aside>
+    </section>

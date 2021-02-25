@@ -1,0 +1,5 @@
+ID:Q0040
+FRAGE_TYP:4
+FRAGE:Was war der Projektgegenstand?
+ANTWORT_SKALA:FREITEXT
+ANTWORT_TYPE:String

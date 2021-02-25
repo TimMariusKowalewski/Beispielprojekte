@@ -1,0 +1,5 @@
+ID:Q0050
+FRAGE_TYP:4
+FRAGE:Welcher unserer Mitarbeiter war für Sie zuständig?
+ANTWORT_SKALA:FREITEXT
+ANTWORT_TYPE:String

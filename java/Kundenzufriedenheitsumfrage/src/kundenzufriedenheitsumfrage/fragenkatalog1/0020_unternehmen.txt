@@ -1,0 +1,5 @@
+ID:Q0020
+FRAGE_TYP:4
+FRAGE:Bei welchem Unternehmen arbeiten Sie? 
+ANTWORT_SKALA:FREITEXT
+ANTWORT_TYPE:String

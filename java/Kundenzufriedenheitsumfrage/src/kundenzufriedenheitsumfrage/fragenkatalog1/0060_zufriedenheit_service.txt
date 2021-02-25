@@ -1,0 +1,5 @@
+ID:Q0060
+FRAGE_TYP:1
+FRAGE:"Wir sind mit dem erbrachten Service im Rahmen des Projektes zufrieden."
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

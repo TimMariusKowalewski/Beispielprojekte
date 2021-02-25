@@ -1,0 +1,6 @@
+ID:Q0080
+FRAGE_TYP:2
+FRAGE:Bitte beurteilen Sie das Unternehmen abschließend ganzheitlich:
+SUB_ANTWORTEN:"Wir werden Green IT als IT-Partner weiterempfehlen."
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

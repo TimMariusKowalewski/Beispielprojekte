@@ -1,0 +1,6 @@
+ID:Q0100
+FRAGE_TYP:2
+FRAGE:Bitte beurteilen Sie die Umsetzung anhand der folgenden Kriterien:
+SUB_ANTWORTEN:termingerecht,schnell,zuverlässig,strukturiert
+ANTWORT_SKALA:0-6
+ANTWORT_TYPE:Int

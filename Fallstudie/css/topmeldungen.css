@@ -1,0 +1,14 @@
+#TopMeldungen {
+    margin-top: 20px;
+    background-color: #fff999;
+    /*height: 50px;
+    line-height: 50px;*/
+    box-shadow: 0 0 5px 5px #fe019a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#TopMeldungLeftArrow:hover, #TopMeldungRightArrow:hover {
+    color: #fe019a;
+}
